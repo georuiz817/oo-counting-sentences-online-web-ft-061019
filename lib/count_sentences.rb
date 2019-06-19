@@ -18,3 +18,4 @@ class String
     self.split(/\.|\?|\!|).delete_if do |e| e.count < 3 end.count
     end
 end
+end
