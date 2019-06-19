@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split(/\.|\?|\!|).delete_if do |e| e.count < 3 end.count
-    
+    self.split(/\.|\?|\!|).delete_if {|e| e.count < 3 }.count
+  end
 end
